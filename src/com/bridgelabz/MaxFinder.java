@@ -2,23 +2,20 @@ package com.bridgelabz;
 
 public class MaxFinder {
 	public static void main(String[] args) {
-		Float x = 3.4f;
-		Float y = 4.6f;
-		Float z = 6.7f;
-		findMaximum(x,y,z);
-		
+		String l = "apple";
+		String m = "banana";
+		String n = "orange";
+		findMaximum(l,m,n);
 	}
 	
-	private static void findMaximum(Float x, Float y, Float z) {
-		Float max = x;
-		if (y.compareTo(x)>0) {
-			max = y;
+	private static void findMaximum(String l, String m, String n) {
+		String max = l;
+		if (m.compareTo(l)>0) {
+			max = m;
 	}
-		if (z.compareTo(max)>0) {
-			max = z;
+		if (n.compareTo(max)>0) {
+			max = n;
 		}
 	 System.out.println("Maximum of numbers are " +max);
-		
 	}
-
 }
