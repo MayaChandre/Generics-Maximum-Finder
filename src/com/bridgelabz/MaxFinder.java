@@ -10,8 +10,7 @@ import java.util.Scanner;
 	        this.inputArray=inputArray;
 	    }
 
-	    
-	    private static <T extends Comparable> void getMax(T[] array){
+	     private static <T extends Comparable> void getMax(T[] array){
 	        T max = array[0];
 	        for (int i=0;i<array.length; i++){
 	            if (array[i].compareTo(max)>0){
@@ -21,12 +20,14 @@ import java.util.Scanner;
 	        MaxFinder.printMax(max);
 
 	    }
-	    private static<T> void printMax(T max) {
+	    private static<T> void printMax(T max)
+	    {
 	        System.out.println("Maximum : "+max);
 	    }
 	    
 	    
-	    public static void main(String[] args) {
+	    public static void main(String[] args)
+	    {
 	        
 	    	Integer[] intArray={10,9,8,7,6,5,56};
 	        Double[] doubleArray={3.3,6.67,4.56,89.43};
@@ -41,9 +42,5 @@ import java.util.Scanner;
 	        System.out.println("maximum of String [ a,abc,mno,xyz ] values are");
 	        MaxFinder.getMax(stringArray);
 	    }
-
-
-  
-
 	    }
 	
