@@ -8,9 +8,9 @@ import java.util.Comparator;
 		T num3;
 		
 		 public static void main(String[] args) {
-	   	  System.out.println("Maximum Integer by creating Generic class :" + new MaxFinder(4, 6, 8).GenericMax());
-	   	  System.out.println("Maximum Float by creating Generic class :" + new MaxFinder(2.5f, 4.56f, 3.45f).GenericMax());
-	   	  System.out.println("Maximum Float by creating Generic class :" + new MaxFinder("lotus","rose","lily").GenericMax());
+	   	  System.out.println("Maximum Integer by creating Generic class :" + new MaxFinder(2, 4, 6).GenericMax());
+	   	  System.out.println("Maximum Float by creating Generic class :" + new MaxFinder(3.4f, 4.6f, 6.7f).GenericMax());
+	   	  System.out.println("Maximum string by creating Generic class :" + new MaxFinder("apple","orange","banana").GenericMax());
 	   }
 		
 	    public  MaxFinder(T num1, T num2, T num3) {
